@@ -1,4 +1,5 @@
 ﻿using FluentValidation;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Projeto01.Application.Adapters.ValidationErrors;
@@ -11,6 +12,7 @@ using System.Threading.Tasks;
 
 namespace Projeto01.Services.Api.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class EmpresasController : ControllerBase

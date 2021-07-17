@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Projeto01.Domain\Projeto01.Domain.csproj" />
+    <ProjectReference Include="..\Projeto01.Security.Authentication\Projeto01.Security.Authentication.csproj" />
   </ItemGroup>
 
 </Project>

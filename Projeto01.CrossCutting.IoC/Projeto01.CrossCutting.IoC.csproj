@@ -12,6 +12,7 @@
     <ProjectReference Include="..\Projeto01.Application\Projeto01.Application.csproj" />
     <ProjectReference Include="..\Projeto01.Infra.Data.MongoDB\Projeto01.Infra.Data.MongoDB.csproj" />
     <ProjectReference Include="..\Projeto01.Infra.Data.SqlServer\Projeto01.Infra.Data.SqlServer.csproj" />
+    <ProjectReference Include="..\Projeto01.Security.Authentication\Projeto01.Security.Authentication.csproj" />
   </ItemGroup>
 
 </Project>

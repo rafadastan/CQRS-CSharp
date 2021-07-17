@@ -28,10 +28,11 @@ namespace Projeto01.Services.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-                        
+
             SwaggerSetup.AddSwaggerSetup(services);
             EntityFrameworkSetup.AddEntityFramework(services, Configuration);
             MongoDBSetup.AddMongoDB(services, Configuration);
+            JwtBearerSetup.AddJwtBearerSetup(services, Configuration);
             DependencyInjection.Register(services);
 
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
@@ -48,6 +49,7 @@ namespace Projeto01.Services.Api
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             //adicionando a configuração do Swagger

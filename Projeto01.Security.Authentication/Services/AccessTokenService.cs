@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace Projeto01.Security.Authentication.Services
 {
-    public class AcessTokenService
+    public class AccessTokenService
     {
-        private readonly AcessTokenSettings _acessTokenSettings;
+        private readonly AccessTokenSettings _acessTokenSettings;
 
-        public AcessTokenService(AcessTokenSettings acessTokenSettings)
+        public AccessTokenService(AccessTokenSettings acessTokenSettings)
         {
             _acessTokenSettings = acessTokenSettings;
         }

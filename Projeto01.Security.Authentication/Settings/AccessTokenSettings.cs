@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Projeto01.Security.Authentication.Settings
 {
-    public class AcessTokenSettings
+    public class AccessTokenSettings
     {
         public string SecretKey { get; set; }
         public int ExpirationInHours { get; set; }
