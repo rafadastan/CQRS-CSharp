@@ -16,7 +16,7 @@ namespace Projeto01.Services.Api.Configurations
     {
         public static void AddJwtBearerSetup(IServiceCollection services, IConfiguration configuration)
         {
-            var settingsSection = configuration.GetSection("AccessTokenSettings");
+            var settingsSection = configuration.GetSection("AcessTokenSettings");
             services.Configure<AccessTokenSettings>(settingsSection);
 
             var appSettings = settingsSection.Get<AccessTokenSettings>();

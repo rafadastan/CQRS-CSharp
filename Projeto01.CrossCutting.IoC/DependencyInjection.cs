@@ -18,6 +18,8 @@ namespace Projeto01.CrossCutting.IoC
             #region Application
 
             services.AddTransient<IEmpresaApplicationService, EmpresaApplicationService>();
+            services.AddTransient<IFuncionarioApplicationService, FuncionarioApplicationService>();
+            services.AddTransient<IUsuarioApplicationService, UsuarioApplicationService>();
 
             #endregion
 
